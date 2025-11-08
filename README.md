@@ -1,4 +1,4 @@
-# RAG PDF Question-Answering with LLaMA
+# RAG PDF Question-Answering with LLaMA ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) pipeline** for PDF documents using:
 
@@ -28,7 +28,7 @@ Users can ask questions about a PDF, and the system retrieves relevant content a
 ## 💡 Example: Streamlit App in Action
 
 Once you run the Streamlit app, you’ll see an interface like this:
-![RAG PDF Q&A Example](assets/rag_app_example.png)
+![RAG PDF Q&A Example](assets/app_example.png)
 
 Ask questions about your PDF (for example):
 
