@@ -25,6 +25,14 @@ Users can ask questions about a PDF, and the system retrieves relevant content a
 
 ---
 
+## 💡 Example: Streamlit App in Action
+
+Once you run the Streamlit app, you’ll see an interface like this:
+
+![RAG PDF Q&A Example](assets/rag_app_example.png)
+
+Ask questions about your PDF (for example):
+
 ## Requirements
 
 - Python 3.10+
