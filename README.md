@@ -30,7 +30,7 @@ Users can ask questions about a PDF, and the system retrieves relevant content a
 
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ## Project Structure
