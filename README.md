@@ -30,3 +30,20 @@ Users can ask questions about a PDF, and the system retrieves relevant content a
 
 ```bash
 pip install -r requirements.txt
+
+---
+
+## Project Structure
+.
+├── data/
+│   └── vector_store/        # Vector DB storage (ignored by git)
+├── models/
+│   └── Dolphin3.0-Llama3.2-1B-Q4_K_M.gguf   # Local LLaMA model (ignored by git)
+├── src/
+│   ├── ingest_pdf.py        # Load PDF and extract text
+│   ├── split_text.py        # Split text into chunks
+│   ├── create_vectorstore.py # Create embeddings & Chroma vector store
+│   ├── RAG_pipeline.py      # Main functions: ask_question, load_llama_model
+│   └── app.py               # Streamlit app
+├── requirements.txt
+└── README.md
