@@ -1,0 +1,1 @@
+PDF_PATH = "../data/aws_rag_best_practices.pdf"
