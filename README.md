@@ -1,4 +1,4 @@
-# RAG PDF Question-Answering with LLaMA
+# RAG PDF Question-Answering with LLaMA ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) pipeline** for PDF documents using:
 
