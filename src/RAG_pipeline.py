@@ -5,32 +5,28 @@ from chromadb.utils import embedding_functions
 from llama_cpp import Llama
 import os
 
-# -------------------------------
-# 1️⃣ Load PDF and split
-# -------------------------------
+
+# 1. Load PDF and split
 def load_and_split_pdf():
     text = load_pdf()
     chunks = split_text(text)
     print(f"Total chunks: {len(chunks)}")
     return chunks
 
-# -------------------------------
-# 2️⃣ Load LLaMA model
-# -------------------------------
+# 2. Load LLaMA model
+
 def load_llama_model(model_path="models/Dolphin3.0-Llama3.2-1B-Q4_K_M.gguf"):
     return Llama(model_path=model_path)
 
-# -------------------------------
-# 3️⃣ Setup vector store
-# -------------------------------
+# 3. Setup vector store
+
 def setup_vectorstore(chunks):
     model, embeddings = create_embeddings(chunks)
     collection, embedding_function = get_or_create_collection(chunks, embeddings)
     return collection, embedding_function
 
-# -------------------------------
-# 4️⃣ RAG query function
-# -------------------------------
+# 4. RAG query function
+
 def ask_question(question, collection, llm, embedding_function,
                  n_results=3, max_chunks=3, max_chunk_len=500, max_tokens=200):
     # Retrieve top chunks
@@ -50,9 +46,9 @@ def ask_question(question, collection, llm, embedding_function,
     output = llm(prompt, max_tokens=max_tokens)
     return output['choices'][0]['text'].strip()
 
-# -------------------------------
-# 5️⃣ Example usage
-# -------------------------------
+
+# 5. Example usage
+
 if __name__ == "__main__":
     # Load chunks
     chunks = load_and_split_pdf()
