@@ -11,7 +11,9 @@ This project demonstrates how to build a **Retrieval-Augmented Generation (RAG) 
 Users can ask questions about a PDF, and the system retrieves relevant content and generates answers.
 
 ---
+## 🔁 RAG Workflow
 
+![RAG Workflow](assets/flowchart.png)
 ## Features
 
 - Load and split PDF documents into smaller chunks
